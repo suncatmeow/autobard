@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AutoBard | Automated Music & Roleplaying Companion</title>
+  <style>
+    /* Core styling adapted from Suncat Music Workshop */
+    :root {
+      color-scheme: dark;
+      --bg: #111414;
+      --panel: #181c1c;
+      --line: #303838;
+      --text: #ecede6;
+      --muted: #96a19a;
+      --accent: #b5ef86;
+      --mono: ui-monospace, SFMono-Regular, Consolas, monospace;
+      --sans: Inter, ui-sans-serif, system-ui, -apple-system, sans-serif;
+    }
+    
+    * { box-sizing: border-box; }
+    
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 14px/1.65 var(--sans);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      width: 100%;
+      margin: 40px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    /* Typography */
+    h1, h2, h3 { font-weight: 550; margin: 0 0 10px 0; letter-spacing: -0.5px; }
+    h1 { font-size: 36px; }
+    h2 { font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 10px; }
+    p { color: var(--muted); margin: 0 0 15px 0; }
+    .mono { font-family: var(--mono); }
+    .accent { color: var(--accent); }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+    
+    .hero img {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 0 15px rgba(181, 239, 134, 0.2));
+    }
+
+    .status-badge {
+      display: inline-block;
+      font: 11px var(--mono);
+      background: rgba(181, 239, 134, 0.1);
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      padding: 6px 12px;
+      border-radius: 20px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    /* Cards / Features Grid */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      padding: 20px;
+      background: #1b211d;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    /* Media Placeholder */
+    .media-box {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #151a18;
+      border: 1px dashed #4a5c3e;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 12px;
+    }
+
+    /* Privacy Policy Box */
+    .privacy-box {
+      padding: 20px;
+      background: #151a18;
+      border-left: 3px solid var(--accent);
+      border-radius: 4px;
+      font-size: 13px;
+    }
+
+    footer {
+      text-align: center;
+      font: 11px var(--mono);
+      color: #788477;
+      padding: 40px 0;
+      border-top: 1px solid var(--line);
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- HERO SECTION -->
+    <header class="hero">
+      <img src="933.png" alt="AutoBard Logo">
+      <div><span class="status-badge">Internal Testing Phase</span></div>
+      <h1>AutoBard</h1>
+      <p style="font-size: 16px; max-width: 600px; margin: 0 auto;">
+        Your companion for automated generation. Currently undergoing closed developer testing. 
+        Public release dates will be announced once the testing track concludes.
+      </p>
+    </header>
+
+    <!-- MEDIA / VIDEO PLACEHOLDER -->
+    <section>
+      <h2>See it in Action</h2>
+      <p>Watch how AutoBard seamlessly integrates into your workflow.</p>
+      <div class="media-box">
+        [ Replace this div with an &lt;iframe&gt; for YouTube or an &lt;img&gt; tag for screenshots ]
+      </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section>
+      <h2>Features</h2>
+      <div class="cards">
+        <div class="card">
+          <h3 class="accent">Feature One</h3>
+          <p>Describe your first major feature here. Explain how the app processes data locally or generates content.</p>
+        </div>
+        <div class="card">
+          <h3 class="accent">Feature Two</h3>
+          <p>Highlight another core mechanic. Keep it brief and focused on the value it brings to the user.</p>
+        </div>
+        <div class="card">
+          <h3 class="accent">Feature Three</h3>
+          <p>Detail the final key feature, perhaps mentioning offline capabilities or seamless integration.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRIVACY POLICY -->
+    <section id="privacy">
+      <h2>Privacy Policy</h2>
+      <div class="privacy-box">
+        <p><strong>Last updated: October 2026</strong></p>
+        <p>AutoBard is designed with privacy as a foundational principle. The application does not collect, store, transmit, or share any personal identifiable information (PII) or telemetry data.</p>
+        <p>All processing occurs entirely locally on your device. Because no data is sent to external servers, we cannot share your data with third parties.</p>
+        <p>If you have any questions regarding this policy, please contact the developer directly.</p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      AutoBard &copy; 2026 Suncat. All rights reserved.
+    </footer>
+
+  </div>
+
+</body>
+</html>
